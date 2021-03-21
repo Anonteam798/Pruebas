@@ -1,18 +1,15 @@
 #!/bin/bash
-
-cd $HOME/Scripts
-
-cp recoveri.db $HOME
-
+home = /data/data/com.termux/files/home
+cd $home/Scripts
+sleep 1
+cp recoveri.db $home
+sleep 1 
 rm Adm.py
 rm README.md
 cd .. 
 sleep 1 
-
-rm -rf Scripts
+rm -rf Scripts/
 git clone https://github.com/Anonteam798/Scripts.git 
-
 sleep 1
-cp $HOME/recoveri.db $HOME/Scripts
-
+cp $home/recoveri.db $home/Scripts
 echo "Done Succefully "
