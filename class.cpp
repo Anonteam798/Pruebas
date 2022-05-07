@@ -23,10 +23,13 @@ void Persona::presentarDatos(){
     cout<<"Mi nombre es: "<<nombre<<" y tengo "<<edad<<endl;
 }
 
-
+void Persona::saludar(){
+    cout<<"Te saluda Luis"<<endl;
+}
 int main(){
     Persona objSaludo("Luis",21);
     cout<<"Hola como estas"<<endl;
     objSaludo.presentarDatos();
+    objSaludo.saludar();
     return 0;
 }
