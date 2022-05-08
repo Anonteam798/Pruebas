@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string.h>
 using namespace std;
 
 class Persona
@@ -48,6 +48,8 @@ int main(){
     cout<<"Hola como estas"<<endl;
     objSaludo.presentarDatos();
     objSaludo.saludar();
+
+    
 
     cout<<"Obteniendo el nombre:"<<endl;
     cout<<objSaludo.getNombre()<<endl;
