@@ -21,7 +21,7 @@ public class Persona{
             System.out.println(new String(buffer.readAllBytes()));
             buffer.close(); 
         } catch (Exception e) {
-            e.printStackTrace(s);
+            e.printStackTrace();
         }
     }
 
@@ -31,6 +31,7 @@ public class Persona{
             BufferedInputStream buffer = new BufferedInputStream(
                 proc.getInputStream()
             );
+             
             System.out.println(new String(buffer.readAllBytes()));
             buffer.close(); 
             
@@ -48,6 +49,6 @@ public class Persona{
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    } 
 
 }
